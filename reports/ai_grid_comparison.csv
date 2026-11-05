@@ -1,0 +1,7 @@
+space,search_seed,best_cv_auc,top10_mean_cv_auc,median_trial_cv_auc,test_auc,seconds
+v1 original,0,0.851,0.8503,0.8482,0.8474,48.0746
+v1 original,1,0.8512,0.8506,0.849,0.8476,47.8685
+v1 original,2,0.8509,0.8503,0.8486,0.8475,46.6795
+v2 AI-suggested,0,0.8504,0.85,0.8483,0.8486,63.7377
+v2 AI-suggested,1,0.8507,0.8499,0.8477,0.8484,65.9119
+v2 AI-suggested,2,0.8508,0.85,0.8481,0.8486,58.754

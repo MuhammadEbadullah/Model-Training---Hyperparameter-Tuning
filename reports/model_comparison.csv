@@ -1,0 +1,5 @@
+,default_cv_auc,tuned_cv_auc,default_test_auc,tuned_test_auc,cv_auc_gain,test_auc_gain,search_seconds
+LogisticRegression,0.8461,0.8463,0.8418,0.841,0.0002,-0.0009,0.6
+RandomForest,0.8199,0.8479,0.82,0.8434,0.028,0.0234,20.0
+GradientBoosting,0.8477,0.8508,0.8434,0.8464,0.0031,0.003,11.1
+XGBoost,0.8229,0.8509,0.8197,0.849,0.028,0.0293,8.6

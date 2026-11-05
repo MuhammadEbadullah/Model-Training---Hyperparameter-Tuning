@@ -1,0 +1,13 @@
+v1 original      seed 0: best CV 0.8510 | top10 0.8503 | median trial 0.8482 | test 0.8474
+v1 original      seed 1: best CV 0.8512 | top10 0.8506 | median trial 0.8490 | test 0.8476
+v1 original      seed 2: best CV 0.8509 | top10 0.8503 | median trial 0.8486 | test 0.8475
+v2 AI-suggested  seed 0: best CV 0.8504 | top10 0.8500 | median trial 0.8483 | test 0.8486
+v2 AI-suggested  seed 1: best CV 0.8507 | top10 0.8499 | median trial 0.8477 | test 0.8484
+v2 AI-suggested  seed 2: best CV 0.8508 | top10 0.8500 | median trial 0.8481 | test 0.8486
+
+                 best_cv_auc         top10_mean_cv_auc         median_trial_cv_auc         test_auc        
+                       mean     std              mean     std                mean     std     mean     std
+space                                                                                                     
+v1 original          0.8510  0.0001            0.8504  0.0002              0.8486  0.0004   0.8475  0.0001
+v2 AI-suggested      0.8506  0.0002            0.8500  0.0001              0.8480  0.0003   0.8485  0.0001
+saved reports/ai_grid_comparison.*

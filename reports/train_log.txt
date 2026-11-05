@@ -1,0 +1,32 @@
+Train (5634, 20) | Test (1409, 20) | churn rate 0.265
+
+=== 1) Baseline: default hyper-parameters ===
+LogisticRegression   CV AUC 0.8461 | test AUC 0.8418
+RandomForest         CV AUC 0.8199 | test AUC 0.8200
+GradientBoosting     CV AUC 0.8477 | test AUC 0.8434
+XGBoost              CV AUC 0.8229 | test AUC 0.8197
+
+=== 2) Hyper-parameter optimisation ===
+LogisticRegression   [grid  ]   8 candidates /   40 fits /    3.0s -> CV AUC 0.8463 | test AUC 0.8410
+RandomForest         [random]  25 candidates /  125 fits /  148.8s -> CV AUC 0.8479 | test AUC 0.8434
+GradientBoosting     [grid  ]  16 candidates /   80 fits /   75.1s -> CV AUC 0.8508 | test AUC 0.8464
+XGBoost              [random]  40 candidates /  200 fits /   47.8s -> CV AUC 0.8508 | test AUC 0.8493
+
+                     default_cv_auc  tuned_cv_auc  default_test_auc  tuned_test_auc  cv_auc_gain  test_auc_gain  search_seconds
+LogisticRegression          0.8461        0.8463            0.8418          0.8410       0.0002        -0.0009             3.0
+RandomForest                0.8199        0.8479            0.8200          0.8434       0.0280         0.0234           148.8
+GradientBoosting            0.8477        0.8508            0.8434          0.8464       0.0031         0.0030            75.1
+XGBoost                     0.8229        0.8508            0.8197          0.8493       0.0279         0.0297            47.8
+
+Best model by CV ROC-AUC: XGBoost
+              precision    recall  f1-score   support
+
+        Stay       0.84      0.90      0.87      1035
+       Churn       0.66      0.54      0.59       374
+
+    accuracy                           0.80      1409
+   macro avg       0.75      0.72      0.73      1409
+weighted avg       0.79      0.80      0.80      1409
+
+Saved models/best_model.joblib (XGBoost)
+Saved plots to reports/
